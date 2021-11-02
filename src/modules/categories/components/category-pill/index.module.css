@@ -1,0 +1,23 @@
+.categoryPill {
+  color: var(--category-on);
+}
+
+.categoryPill_design {
+  background: var(--category-design);
+}
+
+.categoryPill_development {
+  background: var(--category-development);
+}
+
+.categoryPill_customerExperience {
+  background: var(--category-customerExperience);
+}
+
+.categoryPill_branding {
+  background: var(--category-branding);
+}
+
+.categoryPill_marketing {
+  background: var(--category-marketing);
+}

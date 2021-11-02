@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Surface } from '../../../../components/surface';
 import { XColumn } from '../../../../components/x-column';
 import { XRow } from '../../../../components/x-row';
-import { Pill } from '../../../../components/pill';
+import { CategoryPill } from '../../../categories/components/category-pill';
 import css from './index.module.css';
 
 import { ARTICLES } from "../../articles";
@@ -19,7 +19,7 @@ export const ThoughtsList: React.FC<IThoughtsList> = (props) => {
               <XColumn space={'x'} inside={true} className={css.thoughtsList_article}>
                 <h2>{article.title}</h2>
                 <XRow space={'x'} inside={true} align={'center'}>
-                  <Pill>{article.category}</Pill>
+                  <CategoryPill category={article.category} />
                   <small>{article.dateCreated}</small>
                 </XRow>
                 <p>{article.short}</p>

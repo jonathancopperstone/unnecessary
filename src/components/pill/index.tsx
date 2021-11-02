@@ -6,7 +6,7 @@ export const Pill: React.FC<IPill> = (props) => {
   return (
     <div className={cx(
       css.pill,
-      'gradient'
+      props.className
     )}>
       {props.children}
     </div>

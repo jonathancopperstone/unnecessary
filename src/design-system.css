@@ -6,16 +6,23 @@
   --surface-trim: #eee;
   --surface-corners: 3px;
   
-  --type-font: 'Roboto', sans-serif;
+  --type-font: 'Open Sans', sans-serif;
   --type-colour: #000;
   --type-colour-small: grey;
   --type-size-h1: 50px;
-  --type-size-h2: 22px;
+  --type-size-h2: 24px;
   --type-size-h3: 30px;
   --type-size-base: 16px;
   --type-size-small: 10px;
   
-  --space-x: 9px;
+  --category-on: #fff;
+  --category-design: #e4792f;
+  --category-development: #e4d82f;
+  --category-branding: #50e42f;
+  --category-cx: #2fe4b6;
+  --category-marketing: #2f6be4;
+  
+  --space-x: 12px;
   --space-y: 40px;
   --space-z: 60px;
   
