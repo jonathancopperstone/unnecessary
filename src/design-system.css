@@ -1,0 +1,45 @@
+:root {
+  
+  --background: #fff;
+  
+  --surface-hover: #f6f6f6;
+  --surface-trim: #eee;
+  --surface-corners: 3px;
+  
+  --type-font: 'Roboto', sans-serif;
+  --type-colour: #000;
+  --type-colour-small: grey;
+  --type-size-h1: 50px;
+  --type-size-h2: 22px;
+  --type-size-h3: 30px;
+  --type-size-base: 16px;
+  --type-size-small: 10px;
+  
+  --space-x: 9px;
+  --space-y: 40px;
+  --space-z: 60px;
+  
+}
+
+h1 {
+  font-size: var(--type-size-h1);
+}
+
+h2 {
+  font-size: var(--type-size-h2);
+}
+
+h3 {
+  font-size: var(--type-size-h3);
+}
+
+small {
+  color: var(--type-colour-small);
+  font-size: var(--type-size-small);
+}
+
+body {
+  font-family: var(--type-font);
+  font-size: var(--type-size-base);
+  color: var(--type-colour);
+}

@@ -1,0 +1,23 @@
+.xrow {
+  display: flex;
+  flex-direction: row;
+  /* border: 3px solid red; */
+}
+
+.xrow__space_inside.xrow__space_x > * {
+  margin-right: var(--space-x);
+}
+
+.xrow__space_inside.xrow__space_y > * {
+  margin-right: var(--space-y);
+}
+
+.xrow__space_inside.xrow__space_z > * {
+  margin-right: var(--space-z);
+}
+
+.xrow__space_inside.xrow__space_x > *:last-child,
+.xrow__space_inside.xrow__space_y > *:last-child,
+.xrow__space_inside.xrow__space_z > *:last-child {
+  margin-right: 0;
+}

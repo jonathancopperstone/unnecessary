@@ -1,0 +1,13 @@
+.surface {
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+}
+
+.surface_label {
+  font-weight: 800;
+  margin: var(--space-x);
+  padding-bottom: var(--space-x);
+  align-self: flex-start;
+  border-bottom: 3px solid var(--surface-trim);
+}

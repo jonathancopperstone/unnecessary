@@ -1,0 +1,23 @@
+.xcolumn {
+  display: flex;
+  flex-direction: column;
+  /* border: 3px solid white; */
+}
+
+.xcolumn__space_inside.xcolumn__space_x > * {
+  margin-bottom: var(--space-x);
+}
+
+.xcolumn__space_inside.xcolumn__space_y > * {
+  margin-bottom: var(--space-y);
+}
+
+.xcolumn__space_inside.xcolumn__space_z > * {
+  margin-bottom: var(--space-z);
+}
+
+.xcolumn__space_inside.xcolumn__space_x > *:last-child,
+.xcolumn__space_inside.xcolumn__space_y > *:last-child,
+.xcolumn__space_inside.xcolumn__space_z > *:last-child {
+  margin-bottom: 0;
+}

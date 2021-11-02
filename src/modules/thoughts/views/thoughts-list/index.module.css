@@ -1,0 +1,17 @@
+.thoughtsList {
+  max-width: 600px;
+  height: inherit;
+  align-self: flex-start;
+  border-radius: var(--surface-corners);
+  padding: var(--space-y);
+}
+
+.thoughtsList_article {
+  cursor: pointer;
+  padding: var(--space-x);
+  border-radius: var(--surface-corners);
+}
+
+.thoughtsList_article:hover {
+  background: var(--surface-hover);
+}

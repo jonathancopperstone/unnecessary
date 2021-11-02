@@ -1,0 +1,8 @@
+.app {
+  width: 100%;
+  height: 100%;
+}
+
+.app_body {
+  padding: var(--space-z, 40px);
+}

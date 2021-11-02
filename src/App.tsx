@@ -1,26 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { XColumn } from "./components/x-column"
+import { XRow } from "./components/x-row"
+import { ThoughtsList } from "./modules/thoughts/views/thoughts-list"
+import css from "./app.module.css";
+import "./design-system.css";
+import "./globals.css";
 
-function App() {
+export const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <XColumn className={css.app}>
+      <XRow className={css.app_body} grow={1} justify={"center"}>
+        <ThoughtsList />
+      </XRow>
+    </XColumn>
   );
-}
-
-export default App;
+};
