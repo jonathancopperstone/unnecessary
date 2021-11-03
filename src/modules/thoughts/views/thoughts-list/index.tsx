@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useHistory } from 'react-router-dom';
 import { Surface } from '../../../../components/surface';
 import { XColumn } from '../../../../components/x-column';
 import { XRow } from '../../../../components/x-row';
@@ -7,7 +8,8 @@ import css from './index.module.css';
 
 import { ARTICLES } from "../../articles";
 
-export const ThoughtsList: React.FC<IThoughtsList> = (props) => {
+export const ThoughtsList: React.FC<IThoughtsList> = () => {
+  const { push } = useHistory();
   return (
     <Surface 
       label={'Unnecessary Thoughts'}
@@ -16,7 +18,7 @@ export const ThoughtsList: React.FC<IThoughtsList> = (props) => {
         {
           ARTICLES.map((article) => {
             return (
-              <XColumn space={'x'} inside={true} className={css.thoughtsList_article}>
+              <XColumn key={article.id} onClick={() => push(`/thoughts/${article.id}`)} space={'x'} inside={true} className={css.thoughtsList_article}>
                 <h2>{article.title}</h2>
                 <XRow space={'x'} inside={true} align={'center'}>
                   <CategoryPill category={article.category} />
