@@ -1,14 +1,9 @@
 import { IArticles } from '../types'
 
+import { AUniversalSystemForDesignSystems } from './a-universal-system-for-design-systems'
+
 export const ARTICLES: IArticles = [
-  {
-    id: "universal-system",
-    title: "A Universal System for Design Systems",
-    short: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis rutrum metus. Sed nec semper urna. Donec pretium risus id scelerisque malesuada.",
-    category: "Design",
-    body: "blabla",
-    dateCreated: "Today"
-  },
+  AUniversalSystemForDesignSystems,
   {
     id: "branding-and-messaging",
     title: "A thought on Branding and Messaging",

@@ -1,9 +1,21 @@
 .thought {
-  
+  height: 100%;
 }
 
 .thought_splash {
-  width: 100%;
   height: 100%;
   background: black;
+  flex-shrink: 0;
+  color: white;
+  background-position: center;
+  background-size: cover;
+}
+
+.thought_splash_content {
+  height: 100%;
+}
+
+.thought_short {
+  padding: var(--space-z) 0;
+  background: #fafafa;
 }
